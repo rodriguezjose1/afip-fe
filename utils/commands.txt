@@ -1,0 +1,6 @@
+WSASS - Autogestión Certificados Homologación
+Crear certificado con solicitud de certificado
+Autorizar servicio WSFE
+
+openssl genrsa -out clave_privada.key 2048
+openssl req -new -key clave_privada.key -subj "/C=AR/O=miempresa/CN=20403000338" -out solicitud_certificado.csr
